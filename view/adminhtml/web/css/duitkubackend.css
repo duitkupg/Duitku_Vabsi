@@ -1,0 +1,72 @@
+/**
+ * Copyright (c) 2017. All rights reserved Duitku Vabsi.
+ *
+ * This program is free software. You are allowed to use the software but NOT allowed to modify the software.
+ * It is also not legal to do any changes to the software and distribute it in your own name / brand.
+ *
+ * All use of the payment modules happens at your own risk. We offer a free test account that you can use to test the module.
+ *
+ * @author    Duitku Vabsi
+ * @copyright Duitku Vabsi (http://duitku.com)
+ * @license   Duitku Vabsi
+ *
+ */
+.duitku_action_container {
+    line-height: 2.6rem;
+}
+.duitku_action_container tr:nth-child(even) {
+    background: #f1f1f1;
+}
+.duitku_action_container td {
+    width: 50%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.duitku_table_title {
+    border-bottom: 1px solid gray;
+    font-weight: bold;
+}
+.duitku_table_title_padding {
+    padding-top: 20px;
+}
+
+.duitku_table_history_td {
+    vertical-align: top;
+}
+.duitku_table_history_tr {
+    border-bottom: 1px solid gray;
+}
+
+.duitku_paymentcard {
+    max-width: 50px;
+    position: relative;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+.duitku-checkout-method > .entry-edit-head > .config-heading .heading strong {
+    padding-left: 134px;
+    background: url(https://d3r1pwhfz7unl9.cloudfront.net/duitku/duitku-logo.png) no-repeat 0 0;
+    -ms-background-size: 127px 40px;
+    background-size: 127px 40px;
+    line-height: 44px;
+}
+
+.duitku-epay-method > .entry-edit-head > .config-heading .heading strong {
+    padding-left: 134px;
+    background: url(https://d3r1pwhfz7unl9.cloudfront.net/duitku/ePay-logo.png) no-repeat 0 0;
+    -ms-background-size: 127px 35px;
+    background-size: 127px 35px;
+    line-height: 35px;
+}
+
+.duitku-epay-method .heading,
+.duitku-checkout-method .heading {
+    display: inline-block !important;
+}
+
+.duitku-checkout-method .button-container,
+.duitku-epay-method .button-container {
+    float: right;
+}

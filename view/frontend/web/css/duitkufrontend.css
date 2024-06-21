@@ -1,0 +1,36 @@
+/**
+ * Copyright (c) 2017. All rights reserved Duitku Vabsi.
+ *
+ * This program is free software. You are allowed to use the software but NOT allowed to modify the software.
+ * It is also not legal to do any changes to the software and distribute it in your own name / brand.
+ *
+ * All use of the payment modules happens at your own risk. We offer a free test account that you can use to test the module.
+ *
+ * @author    Duitku Vabsi
+ * @copyright Duitku Vabsi (http://duitku.com)
+ * @license   Duitku Vabsi
+ *
+ */
+
+.duitku_paymentcards_container {
+    display: block;
+}
+
+.duitku_checkout_paymenttype {
+    padding: 6px 3px 6px 0;
+    max-width: 50px;
+}
+
+.duitku_vabsiepay_paymenttype {
+    width: 100%;
+    height: 60px;
+    display: block;
+}
+
+.duitku_info_title {
+    font-weight: 600;
+}
+
+.duitku_info_body {
+    font-style: italic;
+}

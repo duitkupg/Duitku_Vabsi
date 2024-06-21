@@ -1,0 +1,34 @@
+{
+  "name": "duitku_payment_gateway/duitku_va_bsi",
+  "description": "Magento 2 payment module for Duitku VA bsi Host to Host",
+  "type": "magento2-module",
+	"authors" : [
+		{
+			"name": "Rayhan Nabhan Lukmansyah",
+			"email": "rayhan@duitku.com",
+			"homepage": "https://duitku.com",
+			"role": "Developer"
+		}
+	],
+  "license": [
+    "MIT"
+  ],
+  "require": {
+    "php": "~7.1.0|~8.1.0|8.1.6"
+  },
+  "autoload": {
+    "files": [ "registration.php" ],
+    "psr-4": {
+      "Duitku\\Vabsi\\": ""
+    }
+  },
+	"keywords": [
+		"magento2",
+		"magento 2",
+		"magento24",
+		"magento 2.4",
+		"duitku",
+		"duitku bsi",
+		"bsi"
+	]
+}

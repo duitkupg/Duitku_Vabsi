@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright (c) 2017. All rights reserved Duitku Vabsi Host to Host.
+ *
+ * This program is free software. You are allowed to use the software but NOT allowed to modify the software.
+ * It is also not legal to do any changes to the software and distribute it in your own name / brand.
+ *
+ * All use of the payment modules happens at your own risk. We offer a free test account that you can use to test the module.
+ *
+ * @author    Duitku Vabsi
+ * @copyright Duitku Vabsi (http://duitku.com)
+ * @license   Duitku Vabsi
+ *
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+  <type name="Magento\Checkout\Model\CompositeConfigProvider">
+    <arguments>
+      <argument name="configProviders" xsi:type="array">
+        <item name="duitku_vabsiepay_config_provicer" xsi:type="object">Duitku\Vabsi\Model\Method\Epay\ConfigProvider</item>
+      </argument>
+    </arguments>
+  </type>
+</config>

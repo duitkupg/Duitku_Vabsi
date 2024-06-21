@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright (c) 2017. All rights reserved Duitku Vabsi Host to Host.
+ *
+ * This program is free software. You are allowed to use the software but NOT allowed to modify the software.
+ * It is also not legal to do any changes to the software and distribute it in your own name / brand.
+ *
+ * All use of the payment modules happens at your own risk. We offer a free test account that you can use to test the module.
+ *
+ * @author    Duitku Vabsi
+ * @copyright Duitku Vabsi (http://duitku.com)
+ * @license   Duitku Vabsi
+ *
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+  <system>
+    <section id="payment" translate="label" type="text" sortOrder="400" showInDefault="1" showInWebsite="1" showInStore="1">
+      <group id="duitku_vabsi" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+        <label>Duitku Vabsi Direct</label>
+        
+        <fieldset_css>complex</fieldset_css>
+        <field id="active" type="select" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+			<label><![CDATA[<b>Enabled:</b>]]></label>
+			<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+			<comment><![CDATA[To enable and disable this payment method.]]></comment>
+			<config_path>payment/duitku_vabsiepay/active</config_path>
+		</field>
+		<field id="title" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+			<label><![CDATA[<b>Title:</b>]]></label>
+			<comment><![CDATA[The title of the payment method displayed to the customers.]]></comment>
+			<config_path>payment/duitku_vabsiepay/title</config_path>
+		</field>
+		
+		<field id="merchantnumber" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+			<label><![CDATA[<b>Merchant number:</b>]]></label>
+			<comment><![CDATA[The unique merchantnumber received from the payment system. If you don't know your merchantnumber please Contact Duitku Payment Provider]]></comment>
+			<config_path>payment/duitku_vabsiepay/merchantnumber</config_path>
+		</field>
+		<field id="api_key" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+			<label>API Secret Key</label>
+			<config_path>payment/duitku_vabsiepay/api_key</config_path>
+			<comment>Test/Live Secret Key</comment>
+		</field>
+		<field id="payment_mode" translate="label" type="select" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="1">
+			<label><![CDATA[<b>Live Mode:</b>]]></label>
+			<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+			<comment><![CDATA[If Payment Mode Enable this redirect To live otherwise Setup Sandbox Mode.]]></comment>
+			<config_path>payment/duitku_vabsiepay/payment_mode</config_path>
+		</field>  
+		<field id="order_status" type="select" sortOrder="21" showInDefault="7" showInWebsite="1" showInStore="1">
+			<label><![CDATA[<b>Order Status After Payment:</b>]]></label>
+			<source_model>Magento\Sales\Model\Config\Source\Order\Status\Processing</source_model>
+			<config_path>payment/duitku_vabsiepay/order_status</config_path>
+			<comment><![CDATA[The order status after payment is compleated]]></comment>
+		</field> 
+		<field id="sendmailorderconfirmation" type="select" sortOrder="8" showInDefault="1" showInWebsite="1" showInStore="1">
+			<label><![CDATA[<b>Send Email Order Confirmation:</b>]]></label>
+			<comment><![CDATA[Enabling this setting will result in an order confirmation is e-mailed to the customer as the payment is made.]]></comment>
+			<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+			<config_path>payment/duitku_vabsiepay/sendmailorderconfirmation</config_path>
+		</field>
+		<field id="instantinvoice" type="select" sortOrder="9" showInDefault="1" showInWebsite="1" showInStore="1">
+			<label><![CDATA[<b>Instant invoice:</b>]]></label>
+			<comment><![CDATA[This is used if you wish to create an invoice once the payment has been authorized.]]></comment>
+			<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+			<config_path>payment/duitku_vabsiepay/instantinvoice</config_path>
+		</field>
+		<field id="instantinvoicemail" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+			<label><![CDATA[<b>Instant invoice mail:</b>]]></label>
+			<comment><![CDATA[If instant invoice then send invoice to customer.]]></comment>
+			<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+			<config_path>payment/duitku_vabsiepay/instantinvoicemail</config_path>
+		</field>
+		
+      </group>
+    </section>
+  </system>
+</config>

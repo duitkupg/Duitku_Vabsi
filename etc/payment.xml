@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright (c) 2017. All rights reserved Duitku Vabsi Host to Host.
+ *
+ * This program is free software. You are allowed to use the software but NOT allowed to modify the software.
+ * It is also not legal to do any changes to the software and distribute it in your own name / brand.
+ *
+ * All use of the payment modules happens at your own risk. We offer a free test account that you can use to test the module.
+ *
+ * @author    Duitku Vabsi
+ * @copyright Duitku Vabsi (http://duitku.com)
+ * @license   Duitku Vabsi
+ *
+ */
+-->
+<payment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Payment:etc/payment.xsd">
+  <groups>
+    <group id="duitku">
+      <label>Duitku Vabsi Direct Payment Methods</label>
+    </group>
+  </groups>
+  <methods>
+     <method name="duitku_vabsiepay">
+      <allow_multiple_address>1</allow_multiple_address>
+    </method>
+  </methods>
+</payment>
